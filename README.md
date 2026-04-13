@@ -1,7 +1,4 @@
-<img width="2553" height="1357" alt="image" src="https://github.com/user-attachments/assets/215d5b94-adfe-4a3c-87b9-5b8428d63b29" /># Donation Module - Zamora
-
-A complete, modern single-page application built with **LitElement** and **Vite**.  
-Blue-themed, card-based UI with smooth navigation, reusable components, and full mock data.
+# Donation Module - Zamora
 
 # Framework
 
@@ -10,7 +7,7 @@ Lit + Vite
 # Module
 Module 4: Donation Module
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - **Node.js** v18+ (check with `node -v`)
@@ -38,7 +35,10 @@ Claude
 Chatgpt
 
 # Prompt
+CHATGPT:
+I am developing a simple web application using java script framework LIT to make an Alumni Donation website. Here i sent a pdf on the design and funtionalities of the website. please make a prompt
 
+CLAUDE:
 I am currently developing a simple Alumni Donation web application using the LIT (LitElement) JavaScript framework. I want the system to be a clean, modern, and desktop and mobile friendly single-page application with reusable components and smooth navigation. The design should follow a soft, card-based UI with a blue theme, rounded corners, and a bottom navigation bar that includes Home, Events, Donations, Notifications, and Profile.
 The application should include a home dashboard where users can quickly see important information such as total donations, donation benefits, campaign progress, top donors, and urgent donation needs. There should also be an events module that allows users to view alumni activities through both a calendar view and a list view, with features like search, filters, and RSVP buttons. For donations, the system should display featured campaigns, ongoing donation drives, and a summary of the user’s donation history.
 Each campaign should have a detailed page showing its purpose, story, funding goal, and testimonials, along with a clear “Donate Now” button. The donation process must be simple and secure, allowing users to choose preset or custom amounts, select payment methods like GCash, Maya, or card, and receive a receipt. Users should also be able to view their donation history, including total contributions, transaction records, and their overall impact.
@@ -129,17 +129,17 @@ alumni-donation-app/
 13 - Forgot Password – Account Recovery
 <img width="2554" height="1355" alt="image" src="https://github.com/user-attachments/assets/b4ac9587-8696-4c04-bc83-718432f49766" />
 
-16 - Admin Home – Dashboard
+14 - Admin Home – Dashboard
 <img width="2558" height="1304" alt="image" src="https://github.com/user-attachments/assets/5719f266-7100-414c-9c38-905574c2b29f" />
 
-17 - Admin – Donation Campaigns
+15 - Admin – Donation Campaigns
 <img width="2557" height="1317" alt="image" src="https://github.com/user-attachments/assets/697a274b-a600-4b3b-abc6-080c3a3c39bf" />
 
 
-18 - Create Campaign/Donation – Campaign Details
+16 - Create Campaign/Donation – Campaign Details
 <img width="2561" height="1359" alt="image" src="https://github.com/user-attachments/assets/4571bf57-cd21-47ef-9b52-06c0dc0da34e" />
 
-20 - Batch Donation
+17 - Batch Donation
 <img width="2570" height="1313" alt="image" src="https://github.com/user-attachments/assets/45e4b6db-d5bf-4b2a-a908-c98010143fef" />
 
 ## Author
