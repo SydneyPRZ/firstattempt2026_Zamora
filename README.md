@@ -1,4 +1,4 @@
-# Donation Module - Zamora
+<img width="2553" height="1357" alt="image" src="https://github.com/user-attachments/assets/215d5b94-adfe-4a3c-87b9-5b8428d63b29" /># Donation Module - Zamora
 
 A complete, modern single-page application built with **LitElement** and **Vite**.  
 Blue-themed, card-based UI with smooth navigation, reusable components, and full mock data.
@@ -8,9 +8,7 @@ Blue-themed, card-based UI with smooth navigation, reusable components, and full
 Lit + Vite
 
 # Module
-
 Module 4: Donation Module
----
 
 ## 🚀 Quick Start
 
@@ -93,45 +91,56 @@ alumni-donation-app/
 ## Screenshots
 
 01 - Home Nav
+<img width="2567" height="1315" alt="image" src="https://github.com/user-attachments/assets/71639419-dc60-4ba6-bd99-6b49d01b1c6c" />
 
 02 - Calendar of Events
+<img width="2563" height="1350" alt="image" src="https://github.com/user-attachments/assets/25c53e3a-9fc1-4b0d-8124-5915bbe4eba3" />
 
 03 - List View
+<img width="2562" height="1359" alt="image" src="https://github.com/user-attachments/assets/94b8ae5c-aaac-4d55-b117-9488f3787b97" />
 
 04 - Donating for a Cause
+<img width="2556" height="1359" alt="image" src="https://github.com/user-attachments/assets/6d715379-ab32-4bef-a5db-4866e9c59178" />
+
 
 05 - Scholarship Fund 2024 – Campaign Details
+<img width="2566" height="1350" alt="image" src="https://github.com/user-attachments/assets/5cf59d34-63ac-42b5-959a-d27967182d67" />
 
 06 - Secure Checkout – Donation
+<img width="2563" height="1353" alt="image" src="https://github.com/user-attachments/assets/728e4822-8952-421f-a4d0-a1efc08bfbd8" />
 
 07 - Donation History
-
+<img width="2553" height="1357" alt="image" src="https://github.com/user-attachments/assets/13c2b896-dd37-4047-abed-adafbe57605f" />
 08 - Notifications Center
+<img width="2557" height="1357" alt="image" src="https://github.com/user-attachments/assets/91000d10-5f2a-4b9c-b6d6-3a5e08d508b7" />
 
 09 - Profile – Account Overview
+<img width="2560" height="1362" alt="image" src="https://github.com/user-attachments/assets/aeeddc4a-61fe-4824-bc93-86986115c648" />
 
 10 - Profile – Edit & Credentials
+<img width="2563" height="1353" alt="image" src="https://github.com/user-attachments/assets/16acfa1b-942f-4601-9d03-61552a0b391e" />
 
 11 - Certificate Vault – Your Impact
+<img width="2562" height="1360" alt="image" src="https://github.com/user-attachments/assets/f65791c6-a1df-42d8-ba98-9d8ba47dda66" />
 
 12 - Log in
 <img width="2562" height="1359" alt="image" src="https://github.com/user-attachments/assets/ba3d8627-e862-4e49-82c2-9799090a992e" />
 
 13 - Forgot Password – Account Recovery
-
-14 - Login – Password Successfully Reset
-
-15 - Access Your Portal – Role Selection
+<img width="2554" height="1355" alt="image" src="https://github.com/user-attachments/assets/b4ac9587-8696-4c04-bc83-718432f49766" />
 
 16 - Admin Home – Dashboard
+<img width="2558" height="1304" alt="image" src="https://github.com/user-attachments/assets/5719f266-7100-414c-9c38-905574c2b29f" />
 
 17 - Admin – Donation Campaigns
+<img width="2557" height="1317" alt="image" src="https://github.com/user-attachments/assets/697a274b-a600-4b3b-abc6-080c3a3c39bf" />
+
 
 18 - Create Campaign/Donation – Campaign Details
-
-19 - Donation Options & Review - Publish Campaign
+<img width="2561" height="1359" alt="image" src="https://github.com/user-attachments/assets/4571bf57-cd21-47ef-9b52-06c0dc0da34e" />
 
 20 - Batch Donation
+<img width="2570" height="1313" alt="image" src="https://github.com/user-attachments/assets/45e4b6db-d5bf-4b2a-a908-c98010143fef" />
 
 ## Author
 Sydney Pamela Zamora Course: 4-112 | MW 7:30AM – 9:00AM Module 3: Donation Module
