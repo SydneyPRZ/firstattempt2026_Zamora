@@ -5,7 +5,7 @@
 Lit + Vite
 
 # Module
-Module 4: Donation Module
+Module 3: Donation Module
 
 ## Quick Start
 
