@@ -410,22 +410,6 @@ navigateFallback: '/offline.html'
 
 ---
 
-### 6. ❌ Error — npm Script Execution Blocked on Windows
-
-**What happened:** Running `npm install` in Windows PowerShell returned:
-```
-File cannot be loaded because running scripts is disabled on this system.
-```
-
-**Why it happened:** Windows PowerShell has a default execution policy that blocks unsigned scripts, including npm's `.ps1` launcher.
-
-**Fix applied:** Either ran the following in PowerShell as Administrator:
-```
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-Or switched to **Command Prompt (cmd)** which does not have this restriction.
-
----
 
 ## Screenshots
 
