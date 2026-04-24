@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline — AlumniGive</title>
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-50: #eff6ff; --blue-100: #dbeafe; --blue-500: #3b82f6;
+      --blue-600: #2563eb; --blue-700: #1d4ed8; --blue-800: #1e40af; --blue-900: #1e3a8a;
+      --slate-100: #f1f5f9; --slate-200: #e2e8f0; --slate-400: #94a3b8;
+      --slate-500: #64748b; --slate-600: #475569; --slate-700: #334155; --slate-800: #1e293b;
+      --gold: #f59e0b; --green: #10b981;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--slate-100);
+      min-height: 100dvh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 24px;
+      color: var(--slate-800);
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      background: white; border-radius: 28px;
+      padding: 48px 32px; max-width: 400px; width: 100%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      text-align: center; animation: popIn 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.85) translateY(20px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .wifi-icon {
+      font-size: 72px; margin-bottom: 20px;
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50%       { transform: scale(0.92); opacity: 0.7; }
+    }
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 28px; color: var(--slate-800);
+      margin-bottom: 10px;
+    }
+    .subtitle { font-size: 15px; color: var(--slate-500); line-height: 1.6; margin-bottom: 32px; }
+    .available-label {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.8px; color: var(--blue-600); margin-bottom: 12px;
+    }
+    .feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 28px;
+    }
+    .feature {
+      background: var(--blue-50); border-radius: 14px; padding: 14px 10px;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+    }
+    .feature-icon { font-size: 26px; }
+    .feature-name { font-size: 12px; font-weight: 600; color: var(--blue-700); }
+    .btn-retry {
+      width: 100%; padding: 15px; border-radius: 14px; border: none;
+      background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
+      color: white; font-size: 15px; font-weight: 700; cursor: pointer;
+      font-family: inherit; transition: all 0.2s; margin-bottom: 12px;
+      box-shadow: 0 8px 24px rgba(37,99,235,0.3);
+    }
+    .btn-retry:hover { transform: translateY(-1px); box-shadow: 0 12px 30px rgba(37,99,235,0.4); }
+    .btn-retry:active { transform: translateY(0); }
+    .btn-open {
+      width: 100%; padding: 13px; border-radius: 14px;
+      border: 1.5px solid var(--slate-200); background: white;
+      color: var(--slate-600); font-size: 14px; font-weight: 600;
+      cursor: pointer; font-family: inherit; transition: all 0.2s;
+    }
+    .btn-open:hover { background: var(--slate-100); }
+    .logo {
+      font-family: 'DM Serif Display', serif; font-size: 15px;
+      color: var(--blue-600); margin-top: 24px;
+    }
+    .logo span { color: var(--gold); }
+    .status-bar {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: linear-gradient(135deg, var(--blue-900), var(--blue-700));
+      color: white; text-align: center;
+      padding: 12px 16px;
+      font-size: 13px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); animation: blink 1.5s infinite; }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .checking { display: none; }
+  </style>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-dot"></div>
+    <span>You're offline — Cached content available</span>
+  </div>
+
+  <div class="card" style="margin-top:52px">
+    <div class="wifi-icon">📡</div>
+    <h1>You're Offline</h1>
+    <p class="subtitle">
+      No internet connection detected. Don't worry — you can still access your cached content below.
+    </p>
+
+    <div class="available-label">✓ Available Offline</div>
+    <div class="feature-grid">
+      <div class="feature"><div class="feature-icon">🏠</div><div class="feature-name">Dashboard</div></div>
+      <div class="feature"><div class="feature-icon">🎯</div><div class="feature-name">Campaigns</div></div>
+      <div class="feature"><div class="feature-icon">📅</div><div class="feature-name">Events</div></div>
+      <div class="feature"><div class="feature-icon">📜</div><div class="feature-name">My History</div></div>
+    </div>
+
+    <button class="btn-retry" onclick="retryConnection()">
+      🔄 Try Reconnecting
+    </button>
+    <button class="btn-open" onclick="openCached()">
+      Open Cached App →
+    </button>
+    <div class="logo">Alumni<span>Give</span></div>
+  </div>
+
+  <script>
+    // Auto-check for connectivity every 5 seconds
+    function checkOnline() {
+      if (navigator.onLine) {
+        window.location.reload();
+        return;
+      }
+      fetch('/', { method: 'HEAD', cache: 'no-store' })
+        .then(() => window.location.reload())
+        .catch(() => {});
+    }
+
+    function retryConnection() {
+      const btn = document.querySelector('.btn-retry');
+      btn.textContent = '⏳ Checking…';
+      btn.disabled = true;
+      setTimeout(() => {
+        checkOnline();
+        btn.textContent = '🔄 Try Reconnecting';
+        btn.disabled = false;
+      }, 1500);
+    }
+
+    function openCached() {
+      // Navigate to cached app shell
+      window.location.href = '/';
+    }
+
+    // Auto-reconnect every 8 seconds
+    setInterval(checkOnline, 8000);
+
+    // Listen for online event
+    window.addEventListener('online', () => window.location.reload());
+  </script>
+</body>
+</html>
