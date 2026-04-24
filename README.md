@@ -1,11 +1,13 @@
-# 🎓 AlumniGive — Alumni Donation Web Application
+# Donation Module - Zamora
 
-A complete, modern single-page application built with **LitElement** and **Vite**.  
-Blue-themed, card-based UI with smooth navigation, reusable components, and full mock data.
+# Framework
 
----
+Lit + Vite
 
-## 🚀 Quick Start
+# Module
+Module 3: Donation Module
+
+## Quick Start
 
 ### Prerequisites
 - **Node.js** v18+ (check with `node -v`)
@@ -26,10 +28,26 @@ npm run dev
 |--------|------------------------|-----------|
 | Alumni | maria@example.com      | pass123   |
 | Admin  | admin@alumni.edu       | admin123  |
-
 ---
 
-## 📁 Project Structure
+## AI Tools Used
+Claude
+Chatgpt
+
+# Prompt
+CHATGPT:
+I am developing a simple web application using java script framework LIT to make an Alumni Donation website. Here i sent a pdf on the design and funtionalities of the website. please make a prompt
+
+CLAUDE:
+I am currently developing a simple Alumni Donation web application using the LIT (LitElement) JavaScript framework. I want the system to be a clean, modern, and desktop and mobile friendly single-page application with reusable components and smooth navigation. The design should follow a soft, card-based UI with a blue theme, rounded corners, and a bottom navigation bar that includes Home, Events, Donations, Notifications, and Profile.
+The application should include a home dashboard where users can quickly see important information such as total donations, donation benefits, campaign progress, top donors, and urgent donation needs. There should also be an events module that allows users to view alumni activities through both a calendar view and a list view, with features like search, filters, and RSVP buttons. For donations, the system should display featured campaigns, ongoing donation drives, and a summary of the user’s donation history.
+Each campaign should have a detailed page showing its purpose, story, funding goal, and testimonials, along with a clear “Donate Now” button. The donation process must be simple and secure, allowing users to choose preset or custom amounts, select payment methods like GCash, Maya, or card, and receive a receipt. Users should also be able to view their donation history, including total contributions, transaction records, and their overall impact.
+The system should include a notification center to keep users updated about campaigns, events, and transactions. There should also be a profile section where users can manage their personal information, view academic records, and download verified credentials. Additionally, a certificate vault feature should allow users to view and download proof of their donations.
+Authentication features such as login, forgot password, and role selection (Alumni or Admin) should be implemented. For administrators, the system should include a dashboard for monitoring fundraising performance, managing campaigns, creating new donation drives, and setting donation options before publishing. There should also be a leaderboard feature that ranks alumni batches based on their donation contributions.
+Use LitElement for all components, keep the code modular and reusable, and use mock data instead of a backend for now. Please provide a complete project structure, component-based code, and instructions on how to run the application, preferably using a simple setup like Vite.
+
+
+## Project Structure
 
 ```
 alumni-donation-app/
@@ -70,76 +88,60 @@ alumni-donation-app/
 ```
 
 ---
+## Screenshots
 
-## ✨ Features
+01 - Home Nav
+<img width="2567" height="1315" alt="image" src="https://github.com/user-attachments/assets/71639419-dc60-4ba6-bd99-6b49d01b1c6c" />
 
-### Alumni Features
-| Feature | Description |
-|---------|-------------|
-| **Home Dashboard** | Total donations, active campaigns, urgent needs, top donors |
-| **Events Module** | Calendar + list view, category filters, search, RSVP |
-| **Donations Page** | Campaigns by category, instant donate button |
-| **Campaign Detail** | Story, funding progress, testimonials, benefits |
-| **Donate Modal** | 3-step: amount → payment → receipt |
-| **Payment Methods** | GCash, Maya, Credit Card, Bank Transfer |
-| **Donation History** | Impact summary, full transaction log |
-| **Notifications** | Filtered by type, mark read, live badge count |
-| **Profile Page** | Personal info edit, academic records, document requests |
-| **Certificate Vault** | View & download donation proof certificates |
+02 - Calendar of Events
+<img width="2563" height="1350" alt="image" src="https://github.com/user-attachments/assets/25c53e3a-9fc1-4b0d-8124-5915bbe4eba3" />
 
-### Admin Features
-| Feature | Description |
-|---------|-------------|
-| **Overview** | Bar chart (monthly), category donut, KPI cards |
-| **Campaign Management** | List, edit, pause, view all campaigns |
-| **New Campaign Form** | Title, category, goal, preset amounts, publish |
-| **Batch Leaderboard** | Rankings with trends and contribution totals |
+03 - List View
+<img width="2562" height="1359" alt="image" src="https://github.com/user-attachments/assets/94b8ae5c-aaac-4d55-b117-9488f3787b97" />
 
----
+04 - Donating for a Cause
+<img width="2556" height="1359" alt="image" src="https://github.com/user-attachments/assets/6d715379-ab32-4bef-a5db-4866e9c59178" />
 
-## 🎨 Design System
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--blue-600` | `#2563eb` | Primary buttons, active states |
-| `--blue-700` | `#1d4ed8` | Hover states, headings |
-| `--gold` | `#f59e0b` | Urgent campaigns, awards |
-| `--green` | `#10b981` | Success states, free events |
-| `--radius-lg` | `20px` | Cards |
-| `--radius-xl` | `28px` | Hero cards, modals |
-| `--font-display` | DM Serif Display | Headings, numbers |
-| `--font-body` | Plus Jakarta Sans | All body text |
+05 - Scholarship Fund 2024 – Campaign Details
+<img width="2566" height="1350" alt="image" src="https://github.com/user-attachments/assets/5cf59d34-63ac-42b5-959a-d27967182d67" />
 
----
+06 - Secure Checkout – Donation
+<img width="2563" height="1353" alt="image" src="https://github.com/user-attachments/assets/728e4822-8952-421f-a4d0-a1efc08bfbd8" />
 
-## 🔧 Build for Production
+07 - Donation History
+<img width="2553" height="1357" alt="image" src="https://github.com/user-attachments/assets/13c2b896-dd37-4047-abed-adafbe57605f" />
+08 - Notifications Center
+<img width="2557" height="1357" alt="image" src="https://github.com/user-attachments/assets/91000d10-5f2a-4b9c-b6d6-3a5e08d508b7" />
 
-```bash
-npm run build      # outputs to /dist
-npm run preview    # preview production build locally
-```
+09 - Profile – Account Overview
+<img width="2560" height="1362" alt="image" src="https://github.com/user-attachments/assets/aeeddc4a-61fe-4824-bc93-86986115c648" />
 
----
+10 - Profile – Edit & Credentials
+<img width="2563" height="1353" alt="image" src="https://github.com/user-attachments/assets/16acfa1b-942f-4601-9d03-61552a0b391e" />
 
-## 🛠 Tech Stack
+11 - Certificate Vault – Your Impact
+<img width="2562" height="1360" alt="image" src="https://github.com/user-attachments/assets/f65791c6-a1df-42d8-ba98-9d8ba47dda66" />
 
-- **LitElement 3** — Web Components framework
-- **Vite 5** — Build tool & dev server
-- **Google Fonts** — DM Serif Display + Plus Jakarta Sans
-- **No backend** — All data is mock/in-memory via `store.js`
+12 - Log in
+<img width="2562" height="1359" alt="image" src="https://github.com/user-attachments/assets/ba3d8627-e862-4e49-82c2-9799090a992e" />
 
----
+13 - Forgot Password – Account Recovery
+<img width="2554" height="1355" alt="image" src="https://github.com/user-attachments/assets/b4ac9587-8696-4c04-bc83-718432f49766" />
 
-## 📝 Extending the App
+14 - Admin Home – Dashboard
+<img width="2558" height="1304" alt="image" src="https://github.com/user-attachments/assets/5719f266-7100-414c-9c38-905574c2b29f" />
 
-### Add a new page
-1. Create `src/components/yourpage/your-page.js` extending `BaseComponent`
-2. Import it in `src/components/app-root.js`
-3. Add a case in `_renderPage()` in `app-root.js`
-4. Add a nav item in `bottom-nav.js` if needed
+15 - Admin – Donation Campaigns
+<img width="2557" height="1317" alt="image" src="https://github.com/user-attachments/assets/697a274b-a600-4b3b-abc6-080c3a3c39bf" />
 
-### Connect a real backend
-- Replace functions in `src/data/store.js` with `fetch()` calls
-- Replace `MOCK_USERS` login with a real auth API call
-- Swap mock arrays in `mock-data.js` with API responses
+
+16 - Create Campaign/Donation – Campaign Details
+<img width="2561" height="1359" alt="image" src="https://github.com/user-attachments/assets/4571bf57-cd21-47ef-9b52-06c0dc0da34e" />
+
+17 - Batch Donation
+<img width="2570" height="1313" alt="image" src="https://github.com/user-attachments/assets/45e4b6db-d5bf-4b2a-a908-c98010143fef" />
+
+## Author
+Sydney Pamela Zamora Course: 4-112 | MW 7:30AM – 9:00AM Module 3: Donation Module
 
